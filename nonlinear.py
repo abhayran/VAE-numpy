@@ -1,25 +1,37 @@
 import numpy as np
 
 
-class ReLU:
-    def forward_prop(self, input_activations):
-        return input_activations * (input_activations > 0)
+class Activation:  # base class, linear activation by default
+    def __init__(self):
+        self.cache = None
 
-    def backward_prop(self, input_activations, incoming_gradients):
-        return incoming_gradients * (input_activations > 0)
+    def forward(self, activations):
+        return activations
 
-
-class Sigmoid:
-    def forward_prop(self, input_activations):
-        pass
-
-    def backward_prop(self, incoming_gradients):
-        pass
+    def backward(self, gradients):
+        return gradients
 
 
-class Softmax:
-    def forward_prop(self, input_activations):
-        pass
+class ReLU(Activation):
+    def __init__(self):
+        super().__init__()
 
-    def backward_prop(self, incoming_gradients):
-        pass
+    def forward(self, activations):
+        self.cache = activations
+        return activations * (activations > 0)
+
+    def backward(self, gradients):
+        return gradients * (self.cache > 0)
+
+
+class Sigmoid(Activation):
+    def __init__(self):
+        super().__init__()
+
+    def forward(self, activations):
+        self.cache = activations
+        return 1 / (1 + np.exp(-activations))
+
+    def backward(self, gradients):
+        next_ = self.forward(self.cache)
+        return gradients * next_ * (1 - next_)

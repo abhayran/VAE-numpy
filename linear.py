@@ -9,7 +9,7 @@ class Linear:
         self.weights_grad = np.zeros_like(self.weights)
         self.bias_grad = np.zeros_like(self.bias)
 
-    def forward(self, activations):
+    def __call__(self, activations):
         self.cache = activations
         return np.dot(activations, self.weights) + self.bias.reshape(1, -1)
 

@@ -1,6 +1,8 @@
-# vae_numpy
-NumPy implementation of variational autoencoders
+# VAE-numpy
+This project is a NumPy implementation of variational autoencoders from the paper "Auto-Encoding Variational Bayes" (Kingma and Welling, 2014)
 
-Extract train-images.idx3-ubyte and train-labels.idx1-ubyte in the project directory, from http://yann.lecun.com/exdb/mnist/
+Take a look at [demo.ipynb](https://github.com/abhayran/VAE-numpy/blob/main/demo.ipynb) for a quick demonstration.
+# Requirements
+To experiment with this project, download the files train-images-idx3-ubyte.gz and train-labels-idx1-ubyte.gz from [this link](http://yann.lecun.com/exdb/mnist), then extract their contents directly into the project directory. 
 
-pip install idx2numpy
+The [idx2numpy](https://pypi.org/project/idx2numpy/) library provides functionality for reading out the images directly into NumPy arrays. You can easily install this library with `pip install idx2numpy`

@@ -1,4 +1,4 @@
-from dense import Dense
+from linear import Linear
 from nonlinear import ReLU, Sigmoid
 import numpy as np
 import matplotlib.pyplot as plt

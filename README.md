@@ -1,5 +1,5 @@
 # VAE-numpy
-This project is a NumPy implementation of variational autoencoders from the paper "Auto-Encoding Variational Bayes" (Kingma and Welling, 2014)
+This project is a NumPy implementation of variational autoencoders from the paper "Auto-Encoding Variational Bayes" (Kingma and Welling, 2014), using the MNIST dataset for experimentation.
 
 Take a look at [demo.ipynb](https://github.com/abhayran/VAE-numpy/blob/main/demo.ipynb) for a quick demonstration.
 # Requirements

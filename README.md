@@ -5,10 +5,10 @@ Take a look at [demo.ipynb](https://github.com/abhayran/VAE-numpy/blob/main/demo
 
 <div class="row">
   <div class="column">
-    <img src="https://user-images.githubusercontent.com/40629249/115994611-09bf8f00-a5d8-11eb-961b-2c6e1c53bf9a.png" title="Latent space visualization" alt="Latent space visualization" width="450" height="450">
+    <img src="https://user-images.githubusercontent.com/40629249/115994611-09bf8f00-a5d8-11eb-961b-2c6e1c53bf9a.png" title="Latent space visualization" alt="Latent space visualization" width="350" height="350">
   </div>
   <div class="column">
-    <img src="https://user-images.githubusercontent.com/40629249/115994615-0a582580-a5d8-11eb-8879-5163f41d9ff3.png" title="Output manifold visualization" alt="Output manifold visualization" width="450" height="450">
+    <img src="https://user-images.githubusercontent.com/40629249/115994615-0a582580-a5d8-11eb-8879-5163f41d9ff3.png" title="Output manifold visualization" alt="Output manifold visualization" width="350" height="350">
   </div>
 </div>
 
